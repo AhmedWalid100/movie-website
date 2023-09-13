@@ -26,8 +26,8 @@ export default function Navbar() {
   return( 
     <>
 <div className="navbar-container">
-<ReactNav className='logoStyle' to='/'>MOVIE LOUNGE</ReactNav>
-  <div><ul><ReactNav to='/'><li>Home</li></ReactNav><ScrollDown to="movies"><li>Movies</li></ScrollDown><ScrollDown to='movies'><li onClick={()=>setMenuStatus("4")}>Upcoming</li></ScrollDown></ul></div>
+<ReactNav className='logoStyle' to='/movie-website'>MOVIE LOUNGE</ReactNav>
+  <div><ul><ReactNav to='/movie-website'><li>Home</li></ReactNav><ScrollDown to="movies"><li>Movies</li></ScrollDown><ScrollDown to='movies'><li onClick={()=>setMenuStatus("4")}>Upcoming</li></ScrollDown></ul></div>
   <div className="rightNav">
     <div className='Search'><SearchIcon onClick={()=>{expand==="expandIt" ? setExpand("shrinkIt"): setExpand("expandIt")}}  fontSize="small" /><input className={expand} type="text" ></input></div>
     <div className='icons'><FacebookRoundedIcon className='iconAnim' fontSize="small"/><TwitterIcon className='iconAnim' fontSize="small"/><InstagramIcon className='iconAnim' fontSize="small"/></div>
@@ -35,7 +35,7 @@ export default function Navbar() {
   {console.log(expand)}
 </div>
 <nav class="navbar">
-        <ReactNav className='logoStyle' to='/'>MOVIE LOUNGE</ReactNav>
+        <ReactNav className='logoStyle' to='/movie-website'>MOVIE LOUNGE</ReactNav>
         <ul  onClick={()=>changeActive()} class={"nav-menu "+activeState}>
           <li class="nav-item">
           <ReactNav to='/'>Home</ReactNav>
