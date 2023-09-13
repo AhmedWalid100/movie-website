@@ -1,0 +1,236 @@
+.heroContainer{
+    height: 100vh;
+    background:radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7),rgba(0,0,0,1)),url(darkKnight.jpg);
+    background-size:cover;
+    background-position:center bottom;
+    padding:170px 180px 200px 170px;
+    display:flex;
+}
+.heroContainerJohn{
+    height: 100vh;
+    background:radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6),rgba(0,0,0,1)),url(johnWick.jpg);
+    background-size:cover;
+    background-position:center bottom;
+    padding:170px 180px 200px 170px;
+    display:flex;
+}
+.heroContainerDark{
+    height: 100vh;
+    background:radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6),rgba(0,0,0,1)),url(darkKnight.jpg);
+    background-size:cover;
+    background-position:center bottom;
+    padding:170px 180px 200px 170px;
+    display:flex;
+}
+.heroContainerAv{
+    height: 100vh;
+    background:radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,1)),url(theAvengers.jpg);
+    background-size:cover;
+    background-position:center bottom;
+    padding:170px 180px 200px 170px;
+    display:flex;
+}
+
+.swiper-button-next{
+    color:white;
+    
+}
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 45px;
+}
+.leftHero h1{
+    margin-left:-2px;
+}
+.leftHero{
+flex:1;
+display:flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+}
+.rightHero{
+flex:1;
+display:flex;
+justify-content: end;
+gap:20px;
+}
+
+.leftHero p::after{
+    content:" ";
+    margin-top:30px;
+    margin-bottom: 30px;
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    display:block;
+}
+.innerRightHero{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.innerRightHero p {
+    font-size: 12px;
+}
+
+.trailer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+
+.imgTrailer{
+    width:150px;
+    height:100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border:solid 1px white;
+}
+.line{
+    background-color: white;
+    width: 100%;
+    min-height: 3px;
+  }
+.imgPosters{
+    width:160px;
+    height:240px;
+    border-radius: 10px;
+
+
+  }
+  .movieMenu{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .moviesContainer{
+    display:flex;
+    flex-wrap: wrap;
+    gap:15px;
+    padding-left: 150px;
+    padding-right: 130px;
+    
+  }
+  .movieCard{
+    display: flex;
+    flex-direction: column;
+    width:160px;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 20px;
+    cursor:pointer;
+  }
+  .movieMenu span{
+    cursor:pointer;
+  
+  }
+
+  .activeMenu{
+    border-bottom: 2px solid #D5210A;
+  }
+
+  .movieCard:hover{
+    transform: scale(1.2);
+  }
+
+  @media screen and (max-width:600px){
+   
+      .heroContainer, .heroContainerAv, .heroContainerDark, .heroContainerJohn{
+        padding:100px 20px 0px 20px;
+        flex-direction: column;
+    }
+
+    h1{
+      font-size:50px;
+    }
+    .rightHero{
+      justify-content: center;
+    }
+    .leftHero{
+      flex-direction: row;
+      align-items: center;
+      gap:30px;
+      flex:unset;
+      justify-content: center;
+      display:none;
+    }
+    
+    
+    .leftHero p::after{
+      content:" ";
+      margin:auto;
+      width: 0px;
+      height: 0px;
+      background-color: white;
+      display:inline-block;
+      position: absolute;
+      top:0;
+      
+  }
+  .innerRightHero{
+    justify-content: start;
+    align-items: center;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+}
+.innerRightHero h2{
+  margin-bottom:40vh;
+}
+.innerRightHero p{
+  text-align: center;
+  width:100%;
+}
+.line{
+  width:50%;
+}
+.moviesContainer{
+  display:flex;
+  flex-wrap: wrap;
+  gap:5px;
+  padding-left: 37px;
+  padding-right: 8px;
+  
+}
+
+  }
+
+  @media screen and (max-width:376px){
+    .innerRightHero h2{
+      margin-bottom:25vh;
+    }
+    .moviesContainer{
+      display:flex;
+      flex-wrap: wrap;
+      gap:5px;
+      padding-left: 20px;
+      padding-right: 4px;
+      
+    }
+  }
+  @media screen and (max-width:361px){
+    .innerRightHero h2{
+      margin-bottom:30vh;
+    }
+    .moviesContainer{
+      display:flex;
+      flex-wrap: wrap;
+      gap:5px;
+      padding-left: 20px;
+      padding-right: 4px;
+      
+    }
+  }
